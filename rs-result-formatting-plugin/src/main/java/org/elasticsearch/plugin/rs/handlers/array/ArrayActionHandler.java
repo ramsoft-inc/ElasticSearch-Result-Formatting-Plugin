@@ -1,7 +1,7 @@
 package org.elasticsearch.plugin.rs.handlers.array;
 
 import org.elasticsearch.action.search.SearchRequest;
-import org.elasticsearch.client.node.NodeClient;
+import org.elasticsearch.client.internal.node.NodeClient;
 import org.elasticsearch.rest.*;
 import org.elasticsearch.rest.action.search.RestSearchAction;
 

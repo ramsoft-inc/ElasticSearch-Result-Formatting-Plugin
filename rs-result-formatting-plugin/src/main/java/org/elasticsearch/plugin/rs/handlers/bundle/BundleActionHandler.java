@@ -1,7 +1,7 @@
 package org.elasticsearch.plugin.rs.handlers.bundle;
 
 import org.elasticsearch.action.search.SearchRequest;
-import org.elasticsearch.client.node.NodeClient;
+import org.elasticsearch.client.internal.node.NodeClient;
 import org.elasticsearch.rest.RestChannel;
 import org.elasticsearch.rest.RestHandler;
 import org.elasticsearch.rest.RestRequest;
