@@ -33,9 +33,9 @@ This plugin provide the request format as belows:
 1. Software dependencies 
    1. JAVA (jdk-17.0.1)
    2. Maven
-   3. Elasticsearch (7.17.0) 
+   3. Elasticsearch (8.1.0) 
       
-      Download: https://www.elastic.co/downloads/past-releases/elasticsearch-7-17-0
+      Download: https://www.elastic.co/downloads/past-releases/elasticsearch-8-1-0
 
 2. Installation process
    1. Build the compiled version of the Elasticsearch-plugin code, and to create a compiled version of it, run the following command:
@@ -45,12 +45,19 @@ This plugin provide the request format as belows:
       Make the Elasticsearch (1.iii) directory your current working directory and run the following command:
       > $ ./cd bin
       > 
-      > $ ./elasticsearch-plugin install file:/{path_to_project}/target/releases/elasticsearch-plugin-rs-1.0-SNAPSHOT.zip
+      > $ ./elasticsearch-plugin install file:/{path_to_project}/target/releases/rs-result-formatting-plugin-2.0-SNAPSHOT.zip
    3. To check that the plugin is installed correctly in the elasticsearch, run the following command:
       > $ ./elasticsearch-plugin list
 
 3. Run ElasticSearch
       > $ elasticsearch
+
+   _Note: ES 8.1.0 set enable security as default, if you want to test on your local, you may want to disable security follow steps as below:_
+   
+   - _Open ./config/elasticsearch.yml file_
+   - _Update setting:_
+     - _xpack.security.enabled: false_ 
+     - _xpack.security.enrollment.enabled: false_
 
 4. Test the plugin
 
