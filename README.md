@@ -33,9 +33,9 @@ This plugin provide the request format as belows:
 1. Software dependencies 
    1. JAVA (jdk-17.0.1)
    2. Maven
-   3. Elasticsearch (8.3.2) 
+   3. Elasticsearch (8.4.2) 
       
-      Download: https://www.elastic.co/downloads/past-releases/elasticsearch-8-3-2
+      Download: https://www.elastic.co/downloads/past-releases/elasticsearch-8-4-2
 
 2. Installation process
    1. Build the compiled version of the Elasticsearch-plugin code, and to create a compiled version of it, run the following command:

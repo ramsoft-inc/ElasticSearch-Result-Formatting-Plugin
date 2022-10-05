@@ -3,13 +3,11 @@ package org.elasticsearch.plugin.rs.handlers.array;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.rest.RestRequest;
 import org.elasticsearch.xcontent.XContentBuilder;
-import org.elasticsearch.rest.BytesRestResponse;
 import org.elasticsearch.rest.RestChannel;
 import org.elasticsearch.rest.RestResponse;
 import org.elasticsearch.rest.action.RestResponseListener;
 import org.elasticsearch.search.SearchHit;
 import org.jetbrains.annotations.NotNull;
-import org.json.JSONObject;
 
 import java.util.Map;
 
@@ -53,6 +51,6 @@ public class ArrayResponseHandler extends RestResponseListener<SearchResponse> {
             }
             builder.endArray();
         }
-        return new BytesRestResponse(response.status(), builder);
+        return new RestResponse(response.status(), builder);
     }
 }
