@@ -1,7 +1,6 @@
 package org.elasticsearch.plugin.rs.handlers.bundle;
 
 import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.rest.BytesRestResponse;
 import org.elasticsearch.rest.RestChannel;
 import org.elasticsearch.rest.RestResponse;
 import org.elasticsearch.rest.action.RestResponseListener;
@@ -74,6 +73,6 @@ public class BundleResponseHandler extends RestResponseListener<SearchResponse> 
         builder.field("total", total);
         builder.field("entry", entryList);
         builder.endObject();
-        return new BytesRestResponse(response.status(), builder);
+        return new RestResponse(response.status(), builder);
     }
 }
