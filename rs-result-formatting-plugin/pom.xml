@@ -11,10 +11,12 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <elasticsearch.version>8.7.0</elasticsearch.version>
+        <elasticsearch.version>8.8.1</elasticsearch.version>
         <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
         <elasticsearch.assembly.descriptor>${basedir}/src/main/assemblies/plugin.xml</elasticsearch.assembly.descriptor>
     </properties>
+	
+	
 
     <dependencies>
         <dependency>
