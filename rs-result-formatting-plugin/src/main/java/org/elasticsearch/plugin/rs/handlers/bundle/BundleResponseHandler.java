@@ -57,7 +57,7 @@ public class BundleResponseHandler extends RestResponseListener<SearchResponse> 
                 {
                     Map highlightBuilder = new HashMap();
                     for (HighlightField value : hit.getHighlightFields().values()) {
-                        highlightBuilder.put(value.getName(), Arrays.toString(value.getFragments()));
+                        highlightBuilder.put(value.name(), Arrays.toString(value.fragments()));
                     }
 
                     Map eTagMap = new HashMap();
